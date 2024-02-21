@@ -1,0 +1,87 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Kode Mono', monospace;
+    background-color: #c1dbea;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+
+
+}
+
+#title {
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0.2, 0.2, 0.2, 0.5); /* Sombra leve */
+
+}
+
+.qrcode-animation {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.link-input {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-family: 'Kode Mono', monospace;
+}
+
+
+#qrcode {
+    margin: 30px center;
+    justify-content: right;
+    padding-left:45px;
+    /* Adiciona a classe de animação */
+    opacity: 0;
+    transform: scale(0.2);
+    transition: opacity 1.5s ease-in-out, transform 1.0s ease-in-out;
+}
+
+
+#qrcode img {
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Ajusta a disposição dos botões */
+    margin-top: 20px; /* Espaço acima dos botões */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    font-family: 'Kode Mono', monospace;
+    margin: 0 10px; /* Adiciona margem entre os botões */
+
+}
+
+button:hover {
+    background-color: #0054b3;
+}
